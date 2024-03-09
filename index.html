@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="title">Yield Farming</div>
+
+  <h2>Enter Investment Amount (in USDC)</h2>
+  <form onsubmit="calculateEarnings(); return false;">
+    <label for="investment-amount">Investment Amount:</label>
+    <input type="number" id="investment-amount" name="investment-amount" required>
+    <button type="submit">Calculate Earnings</button>
+  </form>
+
+  <h2>Pools</h2>
+  <div id="pools-container"></div>
+</body>
+</html>
